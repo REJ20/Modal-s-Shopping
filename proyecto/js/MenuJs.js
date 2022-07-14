@@ -13,7 +13,7 @@ $(document).ready(function(){
 	var txtPassword = localStorage.getItem('password');
 
 	if (txtUser != null && txtUser != undefined) {
-		window.location = '/index.html';
+		window.location = '../index.html';
 	}
 
 });

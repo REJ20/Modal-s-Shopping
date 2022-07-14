@@ -28,20 +28,13 @@
 							<li><a href="page/CamisasDeNiñas.html">Niña</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Nosotros</a></li>
-					<li><a href="#">Blog</a></li>
+					<li><a href="page/Nosotros.html">Nosotros</a></li>
+					<li><a href="page/Blog.html">Blog</a></li>
 				</ul>
 				<div class="session">
 					<img src="img/carrito.png" alt="Agregar al carrito">
 						<a  href="#" id="cerrar"><img src="img/login.png"></a>
-				<script>
-					$('#session #usuario').text(localStorage.usuario);
-						
-					$('#cerrar').click(function(){
-						localStorage.clear();
-						window.location = "page/login.html";
-					});
-				</script>
+				
 			</nav>
 	</header>
 	<div class="slider">
@@ -98,4 +91,12 @@
 			</p>
 		</footer>
 </body>
+<script>
+	$('#session #usuario').text(localStorage.usuario);
+		
+	$('#cerrar').click(function(){
+		localStorage.clear();
+		window.location = "page/login.html";
+	});
+</script>
 </html>

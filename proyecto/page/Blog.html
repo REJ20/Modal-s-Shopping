@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal´s Shopping</title>
+    <link rel="stylesheet" type="text/css" href="/css/estilos.css">
+	<link rel="shortcut icon" href="/img/large.ico" type="image/x-icon">
+	<script src="https://kit.fontawesome.com/d7ef9ff8c6.js" crossorigin="anonymous"></script>
+	<script src="/js/jquery-3.6.0.min.js"></script>
+</head>
+<body id="main-conteiner-layout">
+    <header class="conteiner-header">
+        <div class="title">
+          <h1>Modal´s Shopping</h1>
+            <button class="title-toggle">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            </div>
+          <nav class="menu-layout-nav">
+            <ul class="nav">
+              <li><a href="/index.html">Inicio</a></li>
+              <li><a href="#">Productos</a>
+                <ul class="nav-sub">
+                  <li><a href="CamisasDeMujer.html">Dama</a></li>
+                  <li><a href="CamisasDeHombre.html">Caballero</a></li>
+                  <li><a href="CamisasDeNiños.html">Niño</a></li>
+                  <li><a href="CamisasDeNiñas.html">Niña</a></li>
+                </ul>
+              </li>
+              <li><a href="Nosotros.html">Nosotros</a></li>
+              <li><a href="Blog.html">Blog</a></li>
+            </ul>
+            <div class="session">
+              <img src="../img/carrito.png" alt="Agregar al carrito">
+                <a  href="#" id="cerrar"><img src="../img/login.png"></a>
+          </nav>
+      </header>
+
+      <main>
+        <div id="container">
+            <img src="/img/web2.jpg" alt="">
+        </div>
+      </main>
+      <footer>
+        <p>
+            <small><b>Derechos de autor:</b> Rafael Jurado-Lennys Fuentes<br> 06/2022 - 07/2022 <br>CAPUCOM</small>
+        </p>
+    </footer>
+    <script>
+      $('#session #usuario').text(localStorage.usuario);
+        
+      $('#cerrar').click(function(){
+        localStorage.clear();
+        window.location = "login.html";
+      });
+    </script>
+</body>
+</html>

@@ -253,3 +253,17 @@ h1{
 }
 }
 
+#container{
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 6%;
+}
+#container img{
+
+	max-width: 100%;
+	height: auto;
+	
+}
+
