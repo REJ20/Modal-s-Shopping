@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Modal´s Shopping</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="shortcut icon" href="img/large.ico" type="image/x-icon">
+	<script src="https://kit.fontawesome.com/d7ef9ff8c6.js" crossorigin="anonymous"></script>
+	<script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body id="main-conteiner-layout">
+	<header class="conteiner-header">
+		<div class="title">
+			<h1>Modal´s Shopping</h1>
+				<button class="title-toggle">
+					<i class="fa-solid fa-bars"></i>
+				</button>
+				</div>
+			<nav class="menu-layout-nav">
+				<ul class="nav">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="#">Productos</a>
+						<ul class="nav-sub">
+							<li><a href="page/CamisasDeMujer.html">Dama</a></li>
+							<li><a href="page/CamisasDeHombre.html">Caballero</a></li>
+							<li><a href="page/CamisasDeNiños.html">Niño</a></li>
+							<li><a href="page/CamisasDeNiñas.html">Niña</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Nosotros</a></li>
+					<li><a href="#">Blog</a></li>
+				</ul>
+				<div class="session">
+					<img src="img/carrito.png" alt="Agregar al carrito">
+						<a  href="#" id="cerrar"><img src="img/login.png"></a>
+				<script>
+					$('#session #usuario').text(localStorage.usuario);
+						
+					$('#cerrar').click(function(){
+						localStorage.clear();
+						window.location = "page/login.html";
+					});
+				</script>
+			</nav>
+	</header>
+	<div class="slider">
+		<ul>
+			<li>
+				<img src="img/m1.jpg" alt="">
+			</li>
+			<li>
+				<img src="img/h1.jpg" alt="">
+			</li>
+			<li>
+				<img src="img/n2.jpg" alt="">
+			</li>
+			<li>
+				<img src="img/nñ1.jpg" alt=""
+				></li>
+		</ul>
+	</div>
+	<main class="contenido">
+		<section class="ropa">
+			<article>
+				<figure class="clothes">
+					<a href="page/CamisasDeHombre.html"><img  src="img/hombre.jpg" alt=""></a>
+					<figcaption>Caballero</figcaption>
+				</figure>
+			</article>
+			<article>
+				<figure class="clothes">
+					<a href="page/CamisasDeMujer.html"><img  src="img/mujer2.jpg" alt=""></a>
+					<figcaption>Dama</figcaption>
+				</figure>
+			</article>
+		</section>
+		<section class="ropa">
+			<article>
+				<figure class="clothes">
+					<a href="page/CamisasDeNiños.html"><img src="img/hombre.jpg" alt=""></a>
+					<figcaption>Niño</figcaption>
+				</figure>
+			</article>
+			<article>
+				<figure class="clothes">
+					<a href="page/CamisasDeNiñas.html"><img src="img/mujer2.jpg" alt=""></a>
+					<figcaption>Niña</figcaption>
+				</figure>
+			</article>
+		</section>
+		
+	</main>			
+		<aside></aside>
+		<footer>
+			<p>
+				<small><b>Derechos de autor:</b> Rafael Jurado-Lennys Fuentes<br> 06/2022 - 07/2022 <br>CAPUCOM</small>
+			</p>
+		</footer>
+</body>
+</html>
